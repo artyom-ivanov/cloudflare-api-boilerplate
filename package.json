@@ -1,0 +1,27 @@
+{
+  "name": "cloudflare-api-boilerplate",
+  "version": "0.0.0",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20230814.0",
+    "@types/date-fns": "^2.6.0",
+    "@types/lodash": "^4.14.194",
+    "supabase": ">=1.8.1",
+    "typescript": "^5.1.6",
+    "wrangler": "2.14.0"
+  },
+  "private": true,
+  "scripts": {
+    "start": "wrangler dev",
+    "deploy": "wrangler publish",
+    "db-types": "npx supabase gen types typescript --project-id SUPA_PROJECT_ID --schema public > src/models/database.types.ts"
+  },
+  "dependencies": {
+    "@codehelios/verify-tokenid": "^0.3.1",
+    "@supabase/supabase-js": "^1.35.7",
+    "base64-arraybuffer": "^1.0.2",
+    "date-fns": "^2.30.0",
+    "itty-router": "^2.6.6",
+    "lodash": "^4.17.21",
+    "nanoid": "^4.0.2"
+  }
+}
